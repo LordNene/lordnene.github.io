@@ -76,6 +76,7 @@ img {
   }
 }
 
+// idk what to call it, the inverted black background, white text subtitle at homepage
 .black-box {
     color: $light-color;
     background: $dark-color;
@@ -94,16 +95,19 @@ img {
         color: #fff;
 
         .header-content {
-        text-align: center;
-        padding-top: 20%;
+          text-align: center;
+          padding-top: 20%;
+
+          // h1 {
+          //     @extend .black-box;
+          // }
         }
     }
 
     &-inner {
         // background: $bg-image no-repeat center right / cover;
-        background: $bg-image no-repeat -50% 0% / cover;
-        // background: cornflowerblue;
-        height: 7.5rem;
+        background: $bg-image no-repeat 0% 0% / cover;
+        height: 5.5rem;
         border-bottom: 3px solid $main-color;
         color: #000;
     }
@@ -114,8 +118,26 @@ img {
     }
 }
 
-// Home sections
+// Footer
+#main-footer {
+    background: $dark-color;
+    color: #fff;
+    height: 2rem;
+    bottom: -2rem;
 
+    p {
+        color: #fff;
+        // text-align: center;
+        padding: 0.5rem;
+    }
+
+    // .footer-content {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     height: 2rem;
+    //     align-items: center;
+    // }
+}
 
 // About sections
 #about {
@@ -138,29 +160,29 @@ img {
       border-left: 3px solid $main-color;
       padding: 0.8rem;
     }
-
-    .award-1 {
-      grid-area: aw1;
-    }
-
-    .award-2 {
-      grid-area: aw2;
-    }
-
-    .award-3 {
-      grid-area: aw3;
-    }
-
-    .award-1 .fas,
-    .award-2 .fas,
-    .award-3 .fas {
-      color: $main-color;
-      margin: 1rem;
-    }
   }
 }
 
 // Work sections
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+    border: 0;
+    margin-bottom: 0.2rem;
+    text-align: center;
+
+    &:hover {
+        background: $main-color;
+        color: #fff;
+    }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: $dark-color;
+    color: #fff;
+} 
 
 .video-wrapper {
     position: relative;
@@ -214,6 +236,10 @@ h2, p { color: $dark-color; }
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
+
+    // h3 {
+    //     font-family: 'Paytone One', sans-serif;
+    // }
 }
 
 .tm-catalog-item-description { flex: 1; }

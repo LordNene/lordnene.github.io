@@ -116,13 +116,22 @@ img {
       text-align: center;
       padding-top: 20%; }
   #header-inner {
-    background: url("../img/bg.jpg") no-repeat -50% 0%/cover;
-    height: 7.5rem;
+    background: url("../img/bg.jpg") no-repeat 0% 0%/cover;
+    height: 5.5rem;
     border-bottom: 3px solid #ffbc00;
     color: #000; }
   #header h1 {
     font-size: 4rem;
     line-height: 1.2; }
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 2rem;
+  bottom: -2rem; }
+  #main-footer p {
+    color: #fff;
+    padding: 0.5rem; }
 
 #about-a .about-info {
   display: grid;
@@ -137,20 +146,19 @@ img {
   border-left: 3px solid #ffbc00;
   padding: 0.8rem; }
 
-#about-a .award-1 {
-  grid-area: aw1; }
+.btn, .btn-dark {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  border: 0;
+  margin-bottom: 0.2rem;
+  text-align: center; }
+  .btn:hover, .btn-dark:hover {
+    background: #ffbc00;
+    color: #fff; }
 
-#about-a .award-2 {
-  grid-area: aw2; }
-
-#about-a .award-3 {
-  grid-area: aw3; }
-
-#about-a .award-1 .fas,
-#about-a .award-2 .fas,
-#about-a .award-3 .fas {
-  color: #ffbc00;
-  margin: 1rem; }
+.btn-dark {
+  background: #333;
+  color: #fff; }
 
 .video-wrapper {
   position: relative;
