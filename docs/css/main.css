@@ -165,6 +165,41 @@ img {
   #about-a .bio p {
     text-align: left; }
 
+.bold {
+  font-weight: 700; }
+
+.card {
+  background: #F4F4F4;
+  padding: 1rem;
+  grid-gap: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  border: hidden; }
+  .card.with-img {
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
+  .card.no-img {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .card p {
+    margin: .5rem 0; }
+  .card .article-grid {
+    border-left: 3px solid #ffbc00;
+    padding: 0.8rem; }
+  .card a {
+    color: revert; }
+
+#blog .articles-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem; }
+  #blog .articles-container .article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-column: 1 / span 2;
+    align-items: center; }
+
 .btn, .btn-dark {
   display: inline-block;
   padding: 0.5rem 0.8rem;
